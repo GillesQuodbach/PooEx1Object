@@ -46,6 +46,8 @@ public class TestCity {
 	rabat.setCountryName("Maroc");
 	System.out.println(rabat.toString());
 	
+	toulouse.displayCity();
+	
 	}
 
 }

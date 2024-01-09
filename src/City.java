@@ -14,7 +14,7 @@ public class City {
 
 	// méthodes
 	public void displayCity() {
-		System.out.println(this.cityName + " " + this.countryName + " " + this.cityResident);
+		System.out.println("ville de " + this.cityName + " en " + this.countryName + " ayant " + this.cityResident + " habitants.");
 	}
 
 	// accesseurs

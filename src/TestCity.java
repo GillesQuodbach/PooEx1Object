@@ -2,6 +2,7 @@
 public class TestCity {
 
 	public static void main(String[] args) {
+		
 		City toulouse = new City("Toulouse", "France", 500000);
 		City marseille = new City("Marseille", "France", 870321);
 		City lyon = new City("Lyon", "France", 522228);
@@ -32,9 +33,19 @@ public class TestCity {
 		
 //		System.out.println("La ville de " + toulouse.getCityName() + " a " + toulouse.getCityResident() + " habitants");
 
-		toulouse.setCityResident(-2000);
+		// PARTIE 1.2
+		
+//		toulouse.setCityResident(-2000);
 //		
 
+		// PARTIE 1.3
+
+	City rabat = new City("Rabat", 600000);
+	System.out.println(rabat.toString());
+	
+	rabat.setCountryName("Maroc");
+	System.out.println(rabat.toString());
+	
 	}
 
 }

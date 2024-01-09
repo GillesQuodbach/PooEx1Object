@@ -50,6 +50,21 @@ public class City {
 			this.cityResident += cityResident;
 		}
 	}
+	
+	// Partie 1.3
+	public City(String cityName, int cityResident) {
+		this.cityName = cityName;
+		this.countryName = "unknown";
+		this.cityResident = cityResident;
+	}
 
+	public String toString() {
+
+		return "[ville : " + getCityName() + "]"  +
+				"[pays : " + getCountryName() + "]"  +
+				"[nombre d'habitant : " + getCityResident()  + "]";
+	}
+	
+	
 
 }

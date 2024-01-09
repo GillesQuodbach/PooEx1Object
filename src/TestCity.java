@@ -41,12 +41,18 @@ public class TestCity {
 		// PARTIE 1.3
 
 	City rabat = new City("Rabat", 600000);
-	System.out.println(rabat.toString());
+	System.out.println("[ville : " + rabat.getCityName() + "] " + "[pays : " + rabat.getCountryName() + "]" + "[nombre d'habitants :" + rabat.getCityResident() + "]");
 	
 	rabat.setCountryName("Maroc");
-	System.out.println(rabat.toString());
 	
-	toulouse.displayCity();
+	System.out.println("[ville : " + rabat.getCityName() + "] " + "[pays : " + rabat.getCountryName() + "]" + "[nombre d'habitants :" + rabat.getCityResident() + "]");
+//	System.out.println(rabat);
+	
+//	toulouse.displayCity();
+	
+	
+	// PARTIE 1.4 -> nous indique l'adresse mémoire de l'objet donc ne peut pas l'afficher
+	System.out.println(toulouse);
 	
 	}
 

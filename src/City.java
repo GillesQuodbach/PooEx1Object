@@ -59,10 +59,7 @@ public class City {
 	}
 
 	public String toString() {
-
-		return "[ville : " + getCityName() + "]"  +
-				"[pays : " + getCountryName() + "]"  +
-				"[nombre d'habitant : " + getCityResident()  + "]";
+		return "ville de " + getCityName() + " en " + getCountryName() + " ayant "  + getCityResident()  + " habitants";
 	}
 	
 	

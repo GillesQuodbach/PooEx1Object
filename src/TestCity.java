@@ -6,6 +6,7 @@ public class TestCity {
 		City toulouse = new City("Toulouse", "France", 500000);
 		City marseille = new City("Marseille", "France", 870321);
 		City lyon = new City("Lyon", "France", 522228);
+		City metz = new City("Lyon", "France", 522228);
 
 		// Sans accesseurs
 //		toulouse.displayCity();
@@ -54,6 +55,8 @@ public class TestCity {
 	// PARTIE 1.4 -> nous indique l'adresse mémoire de l'objet donc ne peut pas l'afficher
 	System.out.println(toulouse);
 	
+	// PARTIE 1.7;
+	System.out.println("Nombre de villes crée :" + City.counter);
 	}
 
 }

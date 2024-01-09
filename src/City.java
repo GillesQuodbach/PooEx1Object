@@ -4,12 +4,14 @@ public class City {
 	public String cityName;
 	public String countryName;
 	private int cityResident;
+	static int counter = 0;
 
 	// constructeurs
 	public City(String cityName, String countryName, int cityResident) {
 		this.cityName = cityName;
 		this.countryName = countryName;
 		this.cityResident = cityResident;
+		counter++;
 	}
 
 	// méthodes

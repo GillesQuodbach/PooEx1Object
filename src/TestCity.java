@@ -56,7 +56,7 @@ public class TestCity {
 	System.out.println(toulouse);
 	
 	// PARTIE 1.7;
-	System.out.println("Nombre de villes crée :" + City.counter);
+	System.out.println("Nombre de villes crées :" + City.counter);
 	}
 
 }

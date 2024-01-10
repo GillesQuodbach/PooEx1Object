@@ -56,6 +56,7 @@ public class Person {
 		return bornCity;
 	}
 	
+	@Override
 	public String toString() {
 		return getLastName() 
 		+ "," + getFirstName() + " ," + getAge() + " ans, habitants " 

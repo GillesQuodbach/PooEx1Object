@@ -71,9 +71,9 @@ public class City {
 	}
 	
 	
-
+@Override
 	public String toString() {
-		return "Ville de naissance : " + getCityName() + " , " + getCountryName() + ((getCityResident() == 0) ? "" :(" , population de "+  getCityName() + " " + getCityResident()  + " d'habitants"));
+		return getCityName() + " , " + getCountryName() + ((getCityResident() == 0) ? "" :(" , population de "+  getCityName() + " " + getCityResident()  + " d'habitants"));
 	}
 	
 	

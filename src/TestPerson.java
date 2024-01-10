@@ -32,10 +32,9 @@ public class TestPerson {
 		}
 		System.out.println("------------------------------");
 		System.out.println("Liste après notre filtre");
-for (Person personFr : personnalites) {
-	if (personFr.getBornCity().countryName == "France")
-		System.out.println(personFr);
+		for (Person personFr : personnalites) {
+			if (personFr.getBornCity().countryName == "France")
+				System.out.println(personFr);
+		}
 	}
 }
-	}
-

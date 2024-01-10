@@ -73,7 +73,7 @@ public class City {
 	
 @Override
 	public String toString() {
-		return getCityName() + " , " + getCountryName() + ((getCityResident() == 0) ? "" :(" , population de "+  getCityName() + " " + getCityResident()  + " d'habitants"));
+	return this.cityName + " en " + this.countryName + "" + ((this.cityResident == 0) ? "" : ", " + this.cityResident + " habitants.");
 	}
 	
 	

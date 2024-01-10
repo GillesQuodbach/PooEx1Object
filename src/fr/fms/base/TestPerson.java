@@ -18,7 +18,7 @@ public class TestPerson {
 
 		List<Person> personnalites = new ArrayList<>();
 
-		personnalites.add(new Person("Macron", "Emmanuel", 43, "Elysée à Paris", new City("Amien", "France")));
+		personnalites.add(new Person("Macron", "Emmanuel", 43, "L'Elysée à Paris", new City("Amien", "France")));
 		personnalites.add(new Person("Sarkozy", "Nicolas", 66, "Paris", new City("Paris", "France", 2000000)));
 		personnalites
 				.add(new Person("Johnson", "Boris", 56, "Downing Street à London", new City("NewYork", "Etats-Unis")));

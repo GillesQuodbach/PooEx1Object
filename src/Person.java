@@ -57,9 +57,9 @@ public class Person {
 	}
 	
 	public String toString() {
-		return "Person " + "[lastname=" + getLastName() 
-		+ ", firstname=" + getFirstName() + ", age=" + getAge() + ", adresse=" 
-				+ getAddress() + "]" + " Born" + getBornCity();
+		return getLastName() 
+		+ "," + getFirstName() + " ," + getAge() + " ans, habitants " 
+				+ getAddress() + " , " + " Ville de naissance : " + getBornCity();
 	}
 
 }

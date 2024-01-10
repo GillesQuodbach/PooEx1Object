@@ -34,10 +34,7 @@ public class City {
 	public void displayCity() {
 		System.out.println("ville de " + this.cityName + " en " + this.countryName + " ayant " + this.cityResident + " habitants.");
 	}
-	
-	public void displayBornCity() {
-		System.out.println("**** " + this.cityName + " en " + this.countryName + "****" );
-	}
+
 
 	// accesseurs
 
@@ -76,7 +73,7 @@ public class City {
 	
 
 	public String toString() {
-		return "City [name=" + getCityName() + " state=" + getCountryName() + " nbInhabitant="  + getCityResident()  + "]";
+		return "Ville de naissance : " + getCityName() + " , " + getCountryName() + ((getCityResident() == 0) ? "" :(" , population de "+  getCityName() + " " + getCityResident()  + " d'habitants"));
 	}
 	
 	

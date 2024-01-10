@@ -13,10 +13,30 @@ public class City {
 		this.cityResident = cityResident;
 		counter++;
 	}
+	
+	// Partie 1.3
+		public City(String cityName, int cityResident) {
+			this.cityName = cityName;
+			this.countryName = "unknown";
+			this.cityResident = cityResident;
+		}
+		
+		
+	// Partie 1.9
+		public City(String cityName, String countryName) {
+			this.cityName = cityName;
+			this.countryName = countryName;
+		}
+		
+		
 
 	// méthodes
 	public void displayCity() {
 		System.out.println("ville de " + this.cityName + " en " + this.countryName + " ayant " + this.cityResident + " habitants.");
+	}
+	
+	public void displayBornCity() {
+		System.out.println("**** " + this.cityName + " en " + this.countryName + "****" );
 	}
 
 	// accesseurs
@@ -53,15 +73,10 @@ public class City {
 		}
 	}
 	
-	// Partie 1.3
-	public City(String cityName, int cityResident) {
-		this.cityName = cityName;
-		this.countryName = "unknown";
-		this.cityResident = cityResident;
-	}
+	
 
 	public String toString() {
-		return "ville de " + getCityName() + " en " + getCountryName() + " ayant "  + getCityResident()  + " habitants";
+		return "City [name=" + getCityName() + " state=" + getCountryName() + " nbInhabitant="  + getCityResident()  + "]";
 	}
 	
 	

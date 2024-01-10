@@ -6,14 +6,16 @@ public class Person {
 	public String firstName;
 	public int age;
 	public String address;
+	public City bornCity;
 	
 	
 	// constructeur
-	public Person(String lastName, String firstName, int age, String address) {
+	public Person(String lastName, String firstName, int age, String address, City bornCity) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.age = age;
 		this.address = address;
+		this.bornCity = bornCity;
 	}
 	
 	public Person(String lastName, String firstName, int age) {
@@ -30,11 +32,7 @@ public class Person {
 		this.address = "unknown";
 	}
 	
-//	public City(String cityName, int cityResident) {
-//		this.cityName = cityName;
-//		this.countryName = "unknown";
-//		this.cityResident = cityResident;
-//	}
+
 	
 	// accesseur
 	
@@ -54,9 +52,14 @@ public class Person {
 		return address;
 	}
 	
+	public City getBornCity() {
+		return bornCity;
+	}
+	
 	public String toString() {
 		return "Person " + "[lastname=" + getLastName() 
-		+ ", firstname=" + getFirstName() + ", age=" + getAge() + ", adresse=" + getAddress() + "]";
+		+ ", firstname=" + getFirstName() + ", age=" + getAge() + ", adresse=" 
+				+ getAddress() + "]" + " Born" + getBornCity();
 	}
 
 }

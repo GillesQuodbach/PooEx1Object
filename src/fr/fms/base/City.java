@@ -71,9 +71,9 @@ public class City {
 	}
 	
 	
-@Override
+
 	public String toString() {
-	return this.cityName + " en " + this.countryName + "" + ((this.cityResident == 0) ? "" : ", " + this.cityResident + " habitants.");
+	return this.cityName + " , " + this.countryName + "" + ((this.cityResident == 0) ? "" : ", " + this.cityResident + " habitants.");
 	}
 	
 	

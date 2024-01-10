@@ -59,7 +59,7 @@ public class Person {
 
 	public String toString() {
 		return this.lastName 
-		+ "," + this.firstName + " ," + this.age + " ans, habitants " 
+		+ " , " + this.firstName + " , " + this.age + " ans, habitants " 
 				+ this.address + " , " + " Ville de naissance : " + this.bornCity;
 	}
 

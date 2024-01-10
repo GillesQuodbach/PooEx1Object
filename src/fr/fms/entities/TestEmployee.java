@@ -1,11 +1,11 @@
 package fr.fms.entities;
 
-import fr.fms.base.City;
+import fr.fms.base.*;
 
 public class TestEmployee {
 
 	public static void main(String[] args) {
-		Employee gates = new Employee("Gates", "Bill", 65, "aux USA", new City("amam","jjrj",800000), 70000);
+		Employee gates = new Employee("Gates", "Bill", 65, "aux USA", new City("Washington","USA",7_600_000), "Foundation B&M", 100_000);
 
 		System.out.println(gates);
 		

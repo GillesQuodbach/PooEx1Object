@@ -5,10 +5,12 @@ import fr.fms.base.Person;
 public class Employee extends Person{
 	
 	//attributs
+	public String compagny;
 	public int salary;
 
-	public Employee(String lastName, String firstName, int age, String address, City bornCity, int salary) {
+	public Employee(String lastName, String firstName, int age, String address, City bornCity, String compagny, int salary) {
 		super(lastName, firstName, age, address, bornCity);
+		this.compagny = compagny;
 		this.salary = salary;
 	}
 	
@@ -22,10 +24,16 @@ public class Employee extends Person{
 		this.salary = salary;
 	}
 	
-	@Override
-	public String toString() {
-		return this.lastName + " , " + this.firstName + " , " + this.age+"ans , " + " habitant " + this.address +
-				" , " + this.bornCity + " salaires : " + this.salary;
+	public String getCompagny() {
+		return compagny;
 	}
-
+	
+	public void setCompagny(String compagny) {
+		this.compagny = compagny;
+	}
+	
+	public String toString() {
+		return "Entreprise " + this.compagny + " , " + this.salary;
+	}
+	
 }

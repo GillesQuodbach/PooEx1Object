@@ -27,9 +27,9 @@ public class Capital extends City{
 	}
 	
 	// méthodes
-	@Override
+
 	public String toString() {
-		return this.getCountryName() + " , " + this.getCityName() + " , " + + this.getCityResident() + " d'habitants monument : " + getMonument() ;
+		return this.cityName + " , " + this.countryName + " , " + + this.getCityResident() + " d'habitants monument : " + getMonument() ;
 	}
 
 }

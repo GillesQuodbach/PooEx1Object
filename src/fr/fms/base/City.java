@@ -1,4 +1,4 @@
-
+package fr.fms.base;
 public class City {
 	// attributs
 	public String cityName;

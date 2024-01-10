@@ -1,3 +1,4 @@
+package fr.fms.base;
 import java.util.*;
 
 public class TestPerson {

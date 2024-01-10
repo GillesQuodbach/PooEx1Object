@@ -1,4 +1,4 @@
-
+package fr.fms.base;
 public class TestCity {
 
 	public static void main(String[] args) {

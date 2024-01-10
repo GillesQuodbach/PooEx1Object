@@ -1,4 +1,4 @@
-
+package fr.fms.base;
 public class Person {
 	
 	// attribut
@@ -56,7 +56,7 @@ public class Person {
 		return bornCity;
 	}
 	
-	@Override
+
 	public String toString() {
 		return getLastName() 
 		+ "," + getFirstName() + " ," + getAge() + " ans, habitants " 

@@ -7,7 +7,10 @@ public class Person {
 	public int age;
 	public String address;
 	public City bornCity;
+
+
 	
+	// LastName, FirstName, Age, Address, BornCity
 	
 	// constructeur
 	public Person(String lastName, String firstName, int age, String address, City bornCity) {
@@ -18,24 +21,15 @@ public class Person {
 		this.bornCity = bornCity;
 	}
 	
+
+	
 	public Person(String lastName, String firstName, int age) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.age = age;
 		this.address = "unknown";
-	}
-	
-	public Person(String lastName, String firstName) {
-		this.lastName = lastName;
-		this.firstName = firstName;
-		this.age = 0;
-		this.address = "unknown";
-	}
-	
-
-	
+	}	
 	// accesseur
-	
 	public String getLastName() {
 		return lastName;
 	}

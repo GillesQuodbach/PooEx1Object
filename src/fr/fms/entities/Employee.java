@@ -6,21 +6,20 @@ public class Employee extends Person{
 	
 	//attributs
 	public String compagny;
-	public int salary;
-
-	public Employee(String lastName, String firstName, int age, String address, City bornCity, String compagny, int salary) {
+	public double salary;
+	public Employee(String lastName, String firstName, int age, String address, City bornCity, String compagny, double salary) {
 		super(lastName, firstName, age, address, bornCity);
 		this.compagny = compagny;
 		this.salary = salary;
 	}
 	
+
 	//accesseurs
-	
-	public int getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 	
-	public void setSalary(int salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 	
@@ -33,7 +32,7 @@ public class Employee extends Person{
 	}
 	
 	public String toString() {
-		return "Entreprise " + this.compagny + " , " + this.salary;
+		return lastName + " , "+ firstName + " , " + age + "ans, habitant " + address + " , " + bornCity + " "+ "Entreprise " + this.compagny + " , salaire : " + this.salary;
 	}
 	
 }

@@ -7,7 +7,7 @@ public class TestCommerciale {
 	public static void main(String[] args) {
 
 		Commerciale robert = new Commerciale("Dupont", "robert", 50, "rue des rosiers à Toulouse",
-				new City("Limoge", "France", 133_000), "brico", 5.0);
+				new City("Limoge", "France", 133_000), "brico", -5.0);
 		System.out.println(robert);
 	}
 

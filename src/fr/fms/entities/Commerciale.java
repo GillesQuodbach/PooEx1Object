@@ -13,9 +13,10 @@ public double percentage;
 public Commerciale(String lastName, String firstName, int age, String address, City bornCity, String compagny, double percentage) {
 	super(lastName, firstName, age, address, bornCity);
 	this.compagny = compagny;
-	this.percentage = percentage;
+	setPercentage(percentage);
+	
+	
 }
-
 
 public String getCompagny() {
 	return compagny;
@@ -33,6 +34,11 @@ public double getPercentage() {
 
 
 public void setPercentage(double percentage) {
+	if (percentage < 0) {
+		System.out.println("% du chiffre d'affaire inférieur à 0 impossible");
+		this.percentage = 0.0;
+		return;
+	}
 	this.percentage = percentage;
 }
 

@@ -14,6 +14,7 @@ public class Employee extends Person {
 		super(lastName, firstName, age, address, bornCity);
 		this.compagny = compagny;
 		this.salary = salary;
+		setSalary(salary);
 	}
 
 	// accesseurs
@@ -22,7 +23,11 @@ public class Employee extends Person {
 	}
 
 	public void setSalary(double salary) {
-		this.salary = salary;
+		if (salary < 0) {
+			System.out.println("Le salaire ne peu pas être négatif");
+			this.salary = 0.0;
+		} else {
+		this.salary = salary;}
 	}
 
 	public String getCompagny() {

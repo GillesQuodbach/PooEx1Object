@@ -1,5 +1,5 @@
 package fr.fms.base;
-public class Person {
+public abstract class Person {
 	
 	// attribut
 	public String lastName;
@@ -8,8 +8,6 @@ public class Person {
 	public String address;
 	public City bornCity;
 
-
-	
 	// LastName, FirstName, Age, Address, BornCity
 	
 	// constructeur
@@ -21,14 +19,16 @@ public class Person {
 		this.bornCity = bornCity;
 	}
 	
-
-	
 	public Person(String lastName, String firstName, int age) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.age = age;
 		this.address = "unknown";
 	}	
+	
+	
+	public abstract double remuneration();
+	
 	// accesseur
 	public String getLastName() {
 		return lastName;

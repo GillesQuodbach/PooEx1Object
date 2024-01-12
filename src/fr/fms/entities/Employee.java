@@ -8,6 +8,7 @@ public class Employee extends Person {
 	// attributs
 	public String compagny;
 	public double salary;
+	public double charge = 0.2;
 
 	public Employee(String lastName, String firstName, int age, String address, City bornCity, String compagny,
 			double salary) {
@@ -36,6 +37,12 @@ public class Employee extends Person {
 
 	public void setCompagny(String compagny) {
 		this.compagny = compagny;
+	}
+	
+
+	public double remuneration() {
+		double employeeRemuneration = salary - (charge * salary);
+		return employeeRemuneration;
 	}
 
 	public String toString() {

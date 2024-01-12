@@ -5,7 +5,7 @@ public class TestPerson {
 
 	public static void main(String[] args) {
 
-//		Person manu = new Person("Macron", "Emmanuel", 43, "Elys√©e √† Paris", new City("Amien", "France"));
+//		Person manu = new Person("Macron", "Emmanuel", 43, "ElysÈe √† Paris", new City("Amien", "France"));
 //		Person poutine = new Person("Poutine", "Vladimir", 68);
 //		Person biden = new Person("Biden", "Joe");
 //		
@@ -14,25 +14,25 @@ public class TestPerson {
 //		System.out.println(poutine);
 //		System.out.println(biden);
 
-		// Cr√©ation des porsonnalit√©s
+		// CrÈation des porsonnalitÈs
 
 		List<Person> personnalites = new ArrayList<>();
 
-		personnalites.add(new Person("Macron", "Emmanuel", 43, "L'Elys√©e √† Paris", new City("Amien", "France")));
-		personnalites.add(new Person("Sarkozy", "Nicolas", 66, "Paris", new City("Paris", "France", 2000000)));
-		personnalites
-				.add(new Person("Johnson", "Boris", 56, "Downing Street √† London", new City("NewYork", "Etats-Unis")));
-		personnalites.add(new Person("Depardieu", "G√©rard", 72, "Moscou", new City("Ch√¢teauroux", "France")));
-		personnalites.add(new Person("Kravitz", "Lenny", 56, "H√¥tel particulier √† Paris", new City("NewYork", "USA")));
-		personnalites
-				.add(new Person("Lawrence", "Jennifer", 30, "Louiseville aux USA", new City("Indian Hills", "USA")));
+//		personnalites.add(new Person("Macron", "Emmanuel", 43, "L'ElysÈe √† Paris", new City("Amien", "France")));
+//		personnalites.add(new Person("Sarkozy", "Nicolas", 66, "Paris", new City("Paris", "France", 2000000)));
+//		personnalites
+//				.add(new Person("Johnson", "Boris", 56, "Downing Street √† London", new City("NewYork", "Etats-Unis")));
+//		personnalites.add(new Person("Depardieu", "GÈrard", 72, "Moscou", new City("Ch‚teauroux", "France")));
+//		personnalites.add(new Person("Kravitz", "Lenny", 56, "HÙtel particulier ‡† Paris", new City("NewYork", "USA")));
+//		personnalites
+//				.add(new Person("Lawrence", "Jennifer", 30, "Louiseville aux USA", new City("Indian Hills", "USA")));
 
-		System.out.println("Liste des personnalit√©s");
+		System.out.println("Liste des personnalitÈs");
 		for (Person allPersons : personnalites) {
 			System.out.println(allPersons);
 		}
 		System.out.println("------------------------------");
-		System.out.println("Liste apr√®s notre filtre");
+		System.out.println("Liste aprËs notre filtre");
 		for (Person personFr : personnalites) {
 			if (personFr.getBornCity().countryName == "France")
 				System.out.println(personFr);

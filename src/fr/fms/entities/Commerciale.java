@@ -5,9 +5,13 @@ import fr.fms.base.Person;
 
 public class Commerciale extends Person {
 	
+
+	
 	//Attributs
 public String compagny;
 public double percentage;
+public int averageCa = 50000;
+
 
 
 public Commerciale(String lastName, String firstName, int age, String address, City bornCity, String compagny, double percentage) {
@@ -40,6 +44,14 @@ public void setPercentage(double percentage) {
 		return;
 	}
 	this.percentage = percentage;
+}
+
+
+public double remuneration() {
+	double commercialeRemuneration = (percentage / 100) * averageCa;
+//	System.out.println("Salaire mensuel de " + firstName + " " + lastName + " : " + commercialeRemuneration);
+	return commercialeRemuneration;
+
 }
 
 public String toString() {

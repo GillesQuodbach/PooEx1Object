@@ -63,7 +63,7 @@ public class City {
 
 	public void setCityResident(int cityResident) {
 		if (cityResident < 0) {
-			System.out.println("La population ne peut pas dÃ©croÃ®tre, merci d'entrer un nombre d'habitant valide !");
+			System.out.println("La population ne peut pas décroître, merci d'entrer un nombre d'habitant valide !");
 			return;
 		} else {
 			this.cityResident += cityResident;

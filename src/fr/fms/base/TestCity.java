@@ -52,11 +52,11 @@ public class TestCity {
 //	toulouse.displayCity();
 	
 	
-	// PARTIE 1.4 -> nous indique l'adresse mÃ©moire de l'objet donc ne peut pas l'afficher
+	// PARTIE 1.4 -> nous indique l'adresse mémoire de l'objet donc ne peut pas l'afficher
 	System.out.println(toulouse);
 	
 	// PARTIE 1.7;
-	System.out.println("Nombre de villes crÃ©es :" + City.counter);
+	System.out.println("Nombre de villes créées :" + City.counter);
 	}
 
 }

@@ -2,6 +2,7 @@ package fr.fms.entities;
 
 import java.util.ArrayList;
 
+
 import fr.fms.base.City;
 
 public class TestEntities {
@@ -18,10 +19,24 @@ public class TestEntities {
 		EntitiesArray.add(musk);
 		EntitiesArray.add(robert);
 		
-		for (Object entitie :  EntitiesArray) {
-			System.out.println(entitie);
+		for (Object entity :  EntitiesArray) {
+			System.out.println(entity);
 		}
 		
+		for (Object entity :  EntitiesArray) {
+			if (entity instanceof Employee) {
+				Employee employee = (Employee) entity;
+				double remuneration = employee.remuneration();
+				System.out.println("Le salaire mensuel de " + employee.getFirstName()+ " " + employee.getLastName() + " : " + remuneration);
+			} else if (entity instanceof Commerciale){
+				Commerciale commerciale = (Commerciale) entity;
+				double remuneration = commerciale.remuneration();
+				System.out.println("Le salaire mensuel de " + commerciale.getFirstName()+ " " + commerciale.getLastName() + " : " + remuneration);
+			}
+			
+			
+		}
+	
 	}
 
 }

@@ -29,7 +29,7 @@ public class Capital extends City{
 	// méthodes
 
 	public String toString() {
-		return this.cityName + " , " + this.countryName + " , " + + this.getCityResident() + " d'habitants monument : " + getMonument() ;
+		return this.cityName + " , " + this.countryName + " , " + ((this.getCityResident() != 0) ? "" : this.getCityResident() + " d'habitants") + "monument : " + getMonument() + "," ;
 	}
 
 }

@@ -73,7 +73,7 @@ public class City {
 	
 
 	public String toString() {
-	return "Ville de naissance : " + this.cityName + " , " + this.countryName + "" + ((this.cityResident == 0) ? "" : ", " + this.cityResident + " habitants.");
+	return "Ville de naissance : " + this.cityName + " , " + this.countryName + "" + ((this.cityResident != 0) ? " , " : "," + this.cityResident + " habitants.");
 	}
 	
 	
